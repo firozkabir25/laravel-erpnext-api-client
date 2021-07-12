@@ -18,8 +18,8 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
-        "laravel/framework": "^6.20",
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^6.",
         "php-curl-class/php-curl-class": "^8.0",
         "illuminate/support": "^8.0"
     },
