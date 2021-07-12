@@ -37,6 +37,7 @@
             "Firoz\\LaravelErpnextApiClient\\Tests\\": "tests"
         }
     },
+    "minimum-stability": "dev",
     "scripts": {
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
