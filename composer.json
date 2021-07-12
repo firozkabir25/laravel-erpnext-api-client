@@ -1,0 +1,58 @@
+{
+    "name": "firoz/laravel-erpnext-api-client",
+    "description": "A simple Laravel 6 client for the ERPNext system",
+    "keywords": [
+        "laravel",
+        "api",
+        "firoz",
+        "laravel-erpnext-api-client"
+    ],
+    "homepage": "https://github.com/firozkabir25/laravel-erpnext-api-client",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Firoz kabir",
+            "email": "firozkabirprodhan5@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^6.20",
+        "php-curl-class/php-curl-class": "^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Firoz\\LaravelErpnextApiClient\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Firoz\\LaravelErpnextApiClient\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Firoz\\LaravelErpnextApiClient\\LaravelErpnextApiClientServiceProvider"
+            ],
+            "aliases": {
+                "LaravelErpnextApiClient": "Firoz\\LaravelErpnextApiClient\\LaravelErpnextApiClientFacade"
+            }
+        }
+    }
+}
